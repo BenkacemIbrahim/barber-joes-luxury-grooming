@@ -74,192 +74,235 @@ Desktop](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-21iIAQiIm
 ### Installation
 
 1. **Clone or download the project files**
-```bash
-# If using Git
-git clone <repository-url>
-    cd barber-joes-website
-    ```
 
-    2. **Serve the files**
-    ```bash
-    # Using Python
-    python -m http.server 8000
+   ```bash
+   # If using Git
+   git clone <repository-url>
+   cd barber-joes-website
+   ```
 
-    # Using Node.js
-    npx serve .
+2. **Serve the files**
+   
+   ```bash
+   # Using Python
+   python -m http.server 8000
+   
+   # Using Node.js
+   npx serve .
+   
+   # Using PHP
+   php -S localhost:8000
+   ```
 
-    # Using PHP
-    php -S localhost:8000
-    ```
+3. **Open in browser**
+   Navigate to `http://localhost:8000`
 
-    3. **Open in browser**
-    Navigate to `http://localhost:8000`
+## 📁 Project Structure
 
-    ## 📁 Project Structure
+```
+barber-joes-website/
+├── index.html              # Main website page
+├── main.js                 # Core JavaScript functionality
+├── styles.css              # Custom styles and animations
+├── Legal/                  # Legal documentation pages
+│   ├── privacy-policy.html
+│   ├── terms-of-service.html
+│   └── cancellation-policy.html
+└── README.md               # Project documentation
+```
 
-    ```
-    barber-joes-website/
-    ├── index.html # Main website page
-    ├── main.js # Core JavaScript functionality
-    ├── styles.css # Custom styles and animations
-    ├── Legal/ # Legal documentation pages
-    │ ├── privacy-policy.html
-    │ ├── terms-of-service.html
-    │ └── cancellation-policy.html
-    └── README.md # Project documentation
-    ```
+## 🎨 Design System
 
-    ## 🎨 Design System
+### Color Palette
+- **Primary Gold**: `#C9A96E` - Luxury accent color
+- **Secondary Gold**: `#D4AF37` - Gradient complement
+- **Dark Background**: `#0F0F0F` - Premium dark theme
+- **Light Gold**: `#F4E4BC` - Subtle highlights
 
-    ### Color Palette
-    - **Primary Gold**: `#C9A96E` - Luxury accent color
-    - **Secondary Gold**: `#D4AF37` - Gradient complement
-    - **Dark Background**: `#0F0F0F` - Premium dark theme
-    - **Light Gold**: `#F4E4BC` - Subtle highlights
+### Typography
+- **Headings**: Playfair Display (serif)
+- **Body Text**: Inter (sans-serif)
+- **Luxury Titles**: Custom gradient text effects
 
-    ### Typography
-    - **Headings**: Playfair Display (serif)
-    - **Body Text**: Inter (sans-serif)
-    - **Luxury Titles**: Custom gradient text effects
+### Components
+- **Luxury Cards**: Gradient backgrounds with subtle shadows
+- **Premium Buttons**: Gold gradients with hover animations
+- **Professional Forms**: Enhanced inputs with focus states
 
-    ### Components
-    - **Luxury Cards**: Gradient backgrounds with subtle shadows
-    - **Premium Buttons**: Gold gradients with hover animations
-    - **Professional Forms**: Enhanced inputs with focus states
+## 🛠️ Technical Implementation
 
-    ## 🛠️ Technical Implementation
+### JavaScript Features
 
-    ### JavaScript Features
+#### Services Carousel
+```javascript
+// Dynamic service card generation
+// Touch/swipe gesture support
+// Responsive breakpoint handling
+// Smooth scroll animations
+```
 
-    #### Services Carousel
-    ```javascript
-    // Dynamic service card generation
-    // Touch/swipe gesture support
-    // Responsive breakpoint handling
-    // Smooth scroll animations
-    ```
+#### Booking System
+```javascript
+// Professional calendar interface
+// Time slot management
+// Form validation and submission
+// Booking confirmation system
+```
 
-    #### Booking System
-    ```javascript
-    // Professional calendar interface
-    // Time slot management
-    // Form validation and submission
-    // Booking confirmation system
-    ```
+#### Mobile Menu
+```javascript
+// Full-screen overlay navigation
+// Scroll prevention during menu open
+// Smooth animations and transitions
+// Theme toggle integration
+```
 
-    #### Mobile Menu
-    ```javascript
-    // Full-screen overlay navigation
-    // Scroll prevention during menu open
-    // Smooth animations and transitions
-    // Theme toggle integration
-    ```
+### CSS Architecture
 
-    ### CSS Architecture
+#### Responsive Design
+- Mobile-first approach
+- Flexible grid systems
+- Fluid typography scaling
+- Touch-friendly interface elements
 
-    #### Responsive Design
-    - Mobile-first approach
-    - Flexible grid systems
-    - Fluid typography scaling
-    - Touch-friendly interface elements
+#### Animation System
+- CSS3 keyframe animations
+- Smooth transitions
+- Performance-optimized transforms
+- Reduced motion support
 
-    #### Animation System
-    - CSS3 keyframe animations
-    - Smooth transitions
-    - Performance-optimized transforms
-    - Reduced motion support
+#### Dark Mode
+- CSS custom properties
+- Automatic system preference detection
+- Smooth theme transitions
+- Persistent user preferences
 
-    #### Dark Mode
-    - CSS custom properties
-    - Automatic system preference detection
-    - Smooth theme transitions
-    - Persistent user preferences
+## 📱 Browser Support
 
-    ## 📱 Browser Support
+| Browser | Version |
+|---------|---------|
+| Chrome  | 90+     |
+| Firefox | 88+     |
+| Safari  | 14+     |
+| Edge    | 90+     |
 
-    | Browser | Version |
-    |---------|---------|
-    | Chrome | 90+ |
-    | Firefox | 88+ |
-    | Safari | 14+ |
-    | Edge | 90+ |
+## 🔧 Customization
 
-    ## 🔧 Customization
+### Modifying Services
+Edit the services array in `main.js`:
 
-    ### Modifying Services
-    Edit the services array in `main.js`:
-
-    ```javascript
-    const services = [
-    {
+```javascript
+const services = [
+  {
     name: "Your Service Name",
     price: "$XX",
     duration: "XX mins",
     icon: "bx-icon-name",
     features: ["Feature 1", "Feature 2"]
-    }
-    ];
-    ```
+  }
+];
+```
 
-    ### Updating Colors
-    Modify the Tailwind config in `index.html`:
+### Updating Colors
+Modify the Tailwind config in `index.html`:
 
-    ```javascript
-    colors: {
-    primary: '#YOUR_COLOR',
-    secondary: '#YOUR_COLOR',
-    accent: '#YOUR_COLOR'
-    }
-    ```
+```javascript
+colors: {
+  primary: '#YOUR_COLOR',
+  secondary: '#YOUR_COLOR',
+  accent: '#YOUR_COLOR'
+}
+```
 
-    ### Adding New Pages
-    1. Create new HTML file
-    2. Include navigation structure
-    3. Link CSS and JavaScript files
-    4. Update footer navigation
+### Adding New Pages
+1. Create new HTML file
+2. Include navigation structure
+3. Link CSS and JavaScript files
+4. Update footer navigation
 
-    ## 📋 Features Breakdown
+## 📋 Features Breakdown
 
-    ### Homepage Sections
-    - **Hero**: Slideshow with call-to-action buttons
-    - **Services**: Interactive carousel with detailed service cards
-    - **Team**: Professional staff profiles with statistics
-    - **Gallery**: Responsive image grid with hover effects
-    - **Testimonials**: Client reviews with star ratings
-    - **Booking**: Professional calendar and form system
-    - **Contact**: Information and contact form
+### Homepage Sections
+- **Hero**: Slideshow with call-to-action buttons
+- **Services**: Interactive carousel with detailed service cards
+- **Team**: Professional staff profiles with statistics
+- **Gallery**: Responsive image grid with hover effects
+- **Testimonials**: Client reviews with star ratings
+- **Booking**: Professional calendar and form system
+- **Contact**: Information and contact form
 
-    ### Legal Pages
-    - **Privacy Policy**: GDPR-compliant privacy information
-    - **Terms of Service**: Comprehensive service terms
-    - **Cancellation Policy**: Clear booking and cancellation rules
+### Legal Pages
+- **Privacy Policy**: GDPR-compliant privacy information
+- **Terms of Service**: Comprehensive service terms
+- **Cancellation Policy**: Clear booking and cancellation rules
 
-    ## 🚀 Performance Optimizations
+## 🚀 Performance Optimizations
 
-    ### Loading Performance
-    - Lazy loading for images
-    - Preloading critical resources
-    - Optimized animation performance
-    - Efficient DOM manipulation
+### Loading Performance
+- Lazy loading for images
+- Preloading critical resources
+- Optimized animation performance
+- Efficient DOM manipulation
 
-    ### User Experience
-    - Smooth scrolling navigation
-    - Responsive touch interactions
-    - Fast theme switching
-    - Instant form feedback
+### User Experience
+- Smooth scrolling navigation
+- Responsive touch interactions
+- Fast theme switching
+- Instant form feedback
 
-    ## 📊 Performance Metrics
+## 📊 Performance Metrics
 
-    - **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices, SEO)
-    - **First Contentful Paint**: < 1.5s - **Largest Contentful Paint**: < 2.5s - **Cumulative Layout Shift**: < 0.1 -
-        **Time to Interactive**: < 3s ## 📞 Support & Contact For technical support or customization requests: -
-        **Email**: support@barberjoes.com - **Phone**: (123) 456-7890 - **Website**:
-        [barberjoes.com](https://barberjoes.com) ## 📄 License This project is licensed under the MIT License - see the
-        [LICENSE](LICENSE) file for details. ## 🤝 Contributing 1. Fork the repository 2. Create a feature branch 3.
-        Make your changes 4. Test thoroughly 5. Submit a pull request ## 📈 Future Enhancements ### Planned Features - [
-        ] Online payment integration - [ ] SMS appointment reminders - [ ] Customer loyalty program - [ ] Multi-language
-        support - [ ] Advanced analytics dashboard ### Technical Improvements - [ ] Progressive Web App (PWA) support -
-        [ ] Advanced caching strategies - [ ] API integration for booking management - [ ] Enhanced accessibility
-        features ## 🙏 Acknowledgments - **Design Inspiration**: Modern luxury service websites - **Images**: Unsplash
-        photography - **Icons**: Boxicons icon library - **Fonts**: Google Fonts (Playfair Display, Inter) -
-        **Framework**: Tailwind CSS --- **Built with ❤️ for premium grooming experiences** *Last updated: January 2024*
+- **Lighthouse Score**: 95+ (Performance, Accessibility, Best Practices, SEO)
+- **First Contentful Paint**: < 1.5s
+- **Largest Contentful Paint**: < 2.5s
+- **Cumulative Layout Shift**: < 0.1
+- **Time to Interactive**: < 3s
+
+## 📞 Support & Contact
+
+For technical support or customization requests:
+- **Email**: support@barberjoes.com
+- **Phone**: (123) 456-7890
+- **Website**: [barberjoes.com](https://barberjoes.com)
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## 📈 Future Enhancements
+
+### Planned Features
+- [ ] Online payment integration
+- [ ] SMS appointment reminders
+- [ ] Customer loyalty program
+- [ ] Multi-language support
+- [ ] Advanced analytics dashboard
+
+### Technical Improvements
+- [ ] Progressive Web App (PWA) support
+- [ ] Advanced caching strategies
+- [ ] API integration for booking management
+- [ ] Enhanced accessibility features
+
+## 🙏 Acknowledgments
+
+- **Design Inspiration**: Modern luxury service websites
+- **Images**: Unsplash photography
+- **Icons**: Boxicons icon library
+- **Fonts**: Google Fonts (Playfair Display, Inter)
+- **Framework**: Tailwind CSS
+
+---
+
+**Built with ❤️ for premium grooming experiences**
+
+
+
