@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // Enhanced Services Data - FIXED: Updated first service icon
+    // Services Data
     const services = [
         {
             name: "Signature Haircut",
             price: "$50",
             duration: "45 mins",
-            icon: "bx-cut", // FIXED: Changed from "bxs-cut" to "bx-cut"
+            icon: "bx-cut",
             features: ["Personal Consultation", "Precision Cut", "Premium Styling", "Hot Towel Finish", "Scalp Massage"],
         },
         {
@@ -91,11 +91,9 @@ document.addEventListener("DOMContentLoaded", () => {
     function updateCarousel() {
         track.innerHTML = services.map(createServiceCard).join("")
 
-        // FIXED: Better calculation for card positioning
         const isMobile = window.innerWidth <= 768
-        const cardWidth = isMobile ? 300 : 370 // Fixed width including gaps
+        const cardWidth = isMobile ? 300 : 370 // Width including gaps
 
-        // FIXED: Proper transform calculation
         const translateX = currentIndex * cardWidth
         track.style.transform = `translateX(-${translateX}px)`
 
@@ -139,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
     nextBtn.addEventListener("click", nextSlide)
     prevBtn.addEventListener("click", prevSlide)
 
-    // FIXED: Mouse wheel scrolling for services carousel
+    // Mouse wheel scrolling for services carousel
     const servicesCarousel = document.querySelector(".services-carousel")
     let isScrollingHorizontally = false
     let scrollTimeout
@@ -242,7 +240,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 })
 
-// Enhanced Professional Calendar JavaScript
+// Professional Calendar JavaScript
 document.addEventListener("DOMContentLoaded", () => {
     // Initialize professional calendar
     initializeProfessionalCalendar()
@@ -687,7 +685,7 @@ function resetBookingForm() {
     document.getElementById("booking-summary").classList.add("hidden")
 }
 
-// Enhanced Main JavaScript with Enhanced Mobile Menu
+// Main JavaScript with Mobile Menu
 document.addEventListener("DOMContentLoaded", (event) => {
     const mobileMenuButton = document.getElementById("mobile-menu-button")
     const mobileMenu = document.getElementById("mobile-menu")
@@ -703,7 +701,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     // Disable scrolling during preloader
     document.body.classList.add("preloader-active")
 
-    // Enhanced mobile menu functionality with scroll prevention
+    // Mobile menu functionality with scroll prevention
     function openMobileMenu() {
         // Store current scroll position
         scrollPosition = window.pageYOffset || document.documentElement.scrollTop
@@ -757,7 +755,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         { passive: false },
     )
 
-    // Enhanced theme toggle functionality
+    // Theme toggle functionality
     function toggleTheme() {
         document.documentElement.classList.toggle("dark")
         const isDark = document.documentElement.classList.contains("dark")
@@ -779,7 +777,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
     themeToggle.addEventListener("click", toggleTheme)
     mobileThemeToggle.addEventListener("click", () => {
         toggleTheme()
-        // Don't close menu when toggling theme
     })
 
     // Initialize theme
@@ -791,7 +788,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         updateThemeIcons(true)
     }
 
-    // Enhanced smooth scrolling
+    // Smooth scrolling
     document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
             e.preventDefault()
@@ -805,7 +802,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         })
     })
 
-    // Enhanced preloader with reduced time and scroll prevention
+    // Preloader with reduced time
     window.addEventListener("load", () => {
         setTimeout(() => {
             preloader.style.opacity = "0"
@@ -814,10 +811,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
                 // Re-enable scrolling
                 document.body.classList.remove("preloader-active")
             }, 300)
-        }, 500) // Reduced from 1000ms to 500ms
+        }, 500)
     })
 
-    // Enhanced scroll animations
+    // Scroll animations
     const observerOptions = {
         threshold: 0.1,
         rootMargin: "0px 0px -50px 0px",
@@ -840,7 +837,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         observer.observe(section)
     })
 
-    // Enhanced navbar scroll effect
+    // Navbar scroll effect
     let lastScrollTop = 0
     const navbar = document.querySelector("nav")
 
@@ -866,7 +863,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
     })
 })
 
-// Enhanced Contact Form
+// Contact Form
 document.addEventListener("DOMContentLoaded", () => {
     const form = document.getElementById("contact-form")
     form.addEventListener("submit", (e) => {
@@ -894,8 +891,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 })
 
-
-// Enhanced Notification System
+// Notification System
 function showNotification(message, type = "info") {
     const notification = document.createElement("div")
     notification.className = `fixed top-4 right-4 z-50 p-4 rounded-lg shadow-lg transform translate-x-full transition-transform duration-300 ${type === "success"
@@ -932,7 +928,7 @@ function showNotification(message, type = "info") {
     }, 5000)
 }
 
-// Enhanced Performance Optimizations
+// Performance Optimizations
 document.addEventListener("DOMContentLoaded", () => {
     // Lazy load images
     const images = document.querySelectorAll('img[loading="lazy"]')

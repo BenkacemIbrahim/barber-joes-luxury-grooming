@@ -50,7 +50,7 @@
 
 <body
     class="bg-gray-50 dark:bg-dark text-gray-900 dark:text-gray-100 transition-all duration-500 font-sans preloader-active">
-    <!-- FIXED: Enhanced Preloader with Perfect Centering -->
+    <!-- Preloader -->
     <div id="preloader">
         <div class="preloader-content">
             <div class="luxury-loader"></div>
@@ -59,7 +59,7 @@
         </div>
     </div>
 
-    <!-- Enhanced Navigation -->
+    <!-- Navigation -->
     <nav class="nav-glass fixed w-full z-40 transition-all duration-300" aria-label="Main Navigation">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
@@ -133,11 +133,9 @@
             </div>
         </div>
 
-        <!-- Enhanced Full-Screen Mobile Menu with Updated Layout -->
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="mobile-menu-overlay lg:hidden">
-            <!-- Header with Theme Toggle and Close Button -->
             <div class="mobile-menu-header">
-                <!-- Theme Toggle on the Left -->
                 <button class="mobile-theme-toggle" id="mobile-theme-toggle" aria-label="Toggle Theme">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
                         stroke="currentColor">
@@ -146,7 +144,6 @@
                     </svg>
                 </button>
 
-                <!-- Close Button on the Right -->
                 <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close Mobile Menu">
                     <i class='bx bx-x text-2xl'></i>
                 </button>
@@ -180,7 +177,7 @@
     </nav>
 
     <main>
-        <!-- Enhanced Hero Section with Barber Shop Image Slideshow -->
+        <!-- Hero Section -->
         <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
             <!-- Barber Shop Image Slideshow Background -->
             <div class="absolute inset-0 hero-slideshow">
@@ -230,10 +227,8 @@
                 </div>
             </div>
 
-            <!-- Update the existing slideshow controls div -->
             <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
                 <div class="flex space-x-2 justify-center">
-                    <!-- Reduced space-x-3 to space-x-2 -->
                     <button class="hero-dot active" data-slide="0"></button>
                     <button class="hero-dot" data-slide="1"></button>
                     <button class="hero-dot" data-slide="2"></button>
@@ -244,7 +239,7 @@
 
         </section>
 
-        <!-- Enhanced Services Section -->
+        <!--Services Section -->
         <section id="services" class="py-24 md:py-32 bg-white dark:bg-gray-900">
             <div class="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
                 <div class="text-center mb-20 animate-slide-up">
@@ -278,7 +273,7 @@
             </div>
         </section>
 
-        <!-- Enhanced Team Section with Barber Shop Team -->
+        <!-- Team Section -->
         <section id="team" class="py-24 md:py-32 bg-gray-50 dark:bg-dark">
             <div class="max-w-7xl mx-auto px-6 lg:px-10">
                 <div class="text-center mb-20 animate-slide-up">
@@ -384,7 +379,7 @@
             </div>
         </section>
 
-        <!-- Enhanced Gallery Section with Barber Shop Images -->
+        <!-- Gallery Section -->
         <section id="gallery" class="py-24 md:py-32 bg-white dark:bg-gray-900">
             <div class="max-w-7xl mx-auto px-6 lg:px-10">
                 <div class="text-center mb-20 animate-slide-up">
@@ -433,7 +428,7 @@
             </div>
         </section>
 
-        <!-- Enhanced Testimonials Section with Barber Shop Clients -->
+        <!-- Testimonials Section -->
         <section id="testimonials" class="py-24 md:py-32 bg-gray-50 dark:bg-dark">
             <div class="max-w-7xl mx-auto px-6 lg:px-10">
                 <div class="text-center mb-20 animate-slide-up">
@@ -521,17 +516,17 @@
                 </div>
 
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
-                    <!-- Enhanced Professional Calendar Card -->
+                    <!-- Calendar Card -->
                     <div class="luxury-card rounded-3xl p-8 relative overflow-hidden">
-                        <!-- Calendar Header with Luxury Styling -->
+                        <!-- Calendar Header -->
                         <div class="mb-6">
                             <h3 class="text-2xl font-bold luxury-title mb-2">Select Your Date</h3>
                             <p class="text-gray-600 dark:text-gray-300">Choose your preferred appointment date</p>
                         </div>
 
-                        <!-- Calendar Container with Enhanced Styling -->
+                        <!-- Calendar Container -->
                         <div class="calendar-container relative">
-                            <!-- Custom Calendar Header -->
+                            <!-- Calendar Header -->
                             <div
                                 class="calendar-header flex items-center justify-between mb-6 p-4 bg-gradient-to-r from-primary/10 to-accent/10 rounded-2xl border border-primary/20">
                                 <button id="prev-month"
@@ -548,7 +543,7 @@
                                 </button>
                             </div>
 
-                            <!-- Professional Calendar Grid -->
+                            <!-- Calendar Grid -->
                             <div id="calendar"
                                 class="professional-calendar rounded-2xl overflow-hidden shadow-inner bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
                             </div>
@@ -598,7 +593,7 @@
                                 </div>
                             </div>
 
-                            <!-- Contact Info (Moved Here) -->
+                            <!-- Contact Info -->
                             <div class="mt-6 p-6 bg-gray-50 dark:bg-gray-800 rounded-2xl">
                                 <h4 class="text-xl font-semibold mb-4 luxury-title flex items-center">
                                     <i class='bx bx-info-circle text-primary mr-2'></i>
@@ -623,11 +618,11 @@
                         </div>
                     </div>
 
-                    <!-- Enhanced Booking Form -->
+                    <!-- Booking Form -->
                     <div class="luxury-card rounded-3xl p-8 form-luxury">
                         <h3 class="text-3xl font-bold mb-8 luxury-title">Complete Your Booking</h3>
 
-                        <!-- Service Selection with Enhanced Design -->
+                        <!-- Service Selection -->
                         <div class="mb-8">
                             <h4 class="text-xl font-semibold mb-4 luxury-title">Select Your Service</h4>
                             <div class="space-y-3" id="services-selection">
@@ -635,7 +630,7 @@
                             </div>
                         </div>
 
-                        <!-- Time Slot Selection with Professional Design -->
+                        <!-- Time Slot Selection -->
                         <div class="mb-8">
                             <h4 class="text-xl font-semibold mb-4 luxury-title">Available Time Slots</h4>
                             <div id="time-slots-container" class="grid grid-cols-2 md:grid-cols-3 gap-3">
@@ -697,7 +692,7 @@
                             </div>
                         </div>
 
-                        <!-- Enhanced Booking Button -->
+                        <!-- Booking Button -->
                         <button id="book-appointment"
                             class="btn-luxury w-full py-4 rounded-xl text-lg font-bold inline-flex items-center justify-center space-x-3 relative overflow-hidden group">
                             <i class='bx bxs-calendar-check text-xl'></i>
@@ -711,7 +706,7 @@
             </div>
         </section>
 
-        <!-- Enhanced Contact Section -->
+        <!-- Contact Section -->
         <section id="contact" class="py-24 md:py-32 bg-gray-50 dark:bg-dark">
             <div class="max-w-7xl mx-auto px-6 lg:px-10">
                 <div class="text-center mb-20 animate-slide-up">
@@ -837,7 +832,7 @@
         </section>
     </main>
 
-    <!-- Enhanced Footer -->
+    <!-- Footer -->
     <footer class="bg-dark text-white py-16">
         <div class="max-w-7xl mx-auto px-6 lg:px-10">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-12">
