@@ -263,4 +263,3 @@ git clone <repository-url>
         features ## 🙏 Acknowledgments - **Design Inspiration**: Modern luxury service websites - **Images**: Unsplash
         photography - **Icons**: Boxicons icon library - **Fonts**: Google Fonts (Playfair Display, Inter) -
         **Framework**: Tailwind CSS --- **Built with ❤️ for premium grooming experiences** *Last updated: January 2024*
-       
