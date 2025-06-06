@@ -74,14 +74,14 @@ Desktop](https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-21iIAQiIm
 ### Installation
 
 1. **Clone or download the project files**
-\`\`\`bash
+```bash
 # If using Git
 git clone <repository-url>
     cd barber-joes-website
-    \`\`\`
+    ```
 
     2. **Serve the files**
-    \`\`\`bash
+    ```bash
     # Using Python
     python -m http.server 8000
 
@@ -90,14 +90,14 @@ git clone <repository-url>
 
     # Using PHP
     php -S localhost:8000
-    \`\`\`
+    ```
 
     3. **Open in browser**
     Navigate to `http://localhost:8000`
 
     ## 📁 Project Structure
 
-    \`\`\`
+    ```
     barber-joes-website/
     ├── index.html # Main website page
     ├── main.js # Core JavaScript functionality
@@ -107,7 +107,7 @@ git clone <repository-url>
     │ ├── terms-of-service.html
     │ └── cancellation-policy.html
     └── README.md # Project documentation
-    \`\`\`
+    ```
 
     ## 🎨 Design System
 
@@ -132,28 +132,28 @@ git clone <repository-url>
     ### JavaScript Features
 
     #### Services Carousel
-    \`\`\`javascript
+    ```javascript
     // Dynamic service card generation
     // Touch/swipe gesture support
     // Responsive breakpoint handling
     // Smooth scroll animations
-    \`\`\`
+    ```
 
     #### Booking System
-    \`\`\`javascript
+    ```javascript
     // Professional calendar interface
     // Time slot management
     // Form validation and submission
     // Booking confirmation system
-    \`\`\`
+    ```
 
     #### Mobile Menu
-    \`\`\`javascript
+    ```javascript
     // Full-screen overlay navigation
     // Scroll prevention during menu open
     // Smooth animations and transitions
     // Theme toggle integration
-    \`\`\`
+    ```
 
     ### CSS Architecture
 
@@ -189,7 +189,7 @@ git clone <repository-url>
     ### Modifying Services
     Edit the services array in `main.js`:
 
-    \`\`\`javascript
+    ```javascript
     const services = [
     {
     name: "Your Service Name",
@@ -199,18 +199,18 @@ git clone <repository-url>
     features: ["Feature 1", "Feature 2"]
     }
     ];
-    \`\`\`
+    ```
 
     ### Updating Colors
     Modify the Tailwind config in `index.html`:
 
-    \`\`\`javascript
+    ```javascript
     colors: {
     primary: '#YOUR_COLOR',
     secondary: '#YOUR_COLOR',
     accent: '#YOUR_COLOR'
     }
-    \`\`\`
+    ```
 
     ### Adding New Pages
     1. Create new HTML file
@@ -260,7 +260,7 @@ git clone <repository-url>
         ] Online payment integration - [ ] SMS appointment reminders - [ ] Customer loyalty program - [ ] Multi-language
         support - [ ] Advanced analytics dashboard ### Technical Improvements - [ ] Progressive Web App (PWA) support -
         [ ] Advanced caching strategies - [ ] API integration for booking management - [ ] Enhanced accessibility
-        features ## 🙏 Acknowledgments - **Design Inspiration**: Modern luxury service websites - **Images**: Custom
-        screenshots and photography - **Icons**: Boxicons icon library - **Fonts**: Google Fonts (Playfair Display,
-        Inter) - **Framework**: Tailwind CSS --- **Built with ❤️ for premium grooming experiences** *Last updated:
-        January 2024*
+        features ## 🙏 Acknowledgments - **Design Inspiration**: Modern luxury service websites - **Images**: Unsplash
+        photography - **Icons**: Boxicons icon library - **Fonts**: Google Fonts (Playfair Display, Inter) -
+        **Framework**: Tailwind CSS --- **Built with ❤️ for premium grooming experiences** *Last updated: January 2024*
+       
